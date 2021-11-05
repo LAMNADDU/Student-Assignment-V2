@@ -1,0 +1,2 @@
+# Student-Assignment-V2
+Project assignment created by students taking Introduction to Computing under the Computer Studies Division.                     School of Arts and Sciences of the Ateneo de Davao University. Simple Examples involving Basic HTML, Javascript Functions, User Interaction and Performing Mathematical Calculations are shown.                     This output is developed by one of the students of BS information Technology 1-A by Luke Aison Narca.
