@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 1130 - Introduction to Computing</title>
+    <link rel="stylesheet" href="design.css"/>
+    <script src="https://kit.fontawesome.com/09ff6f1a78.js" crossorigin="anonymous"></script>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+                </style>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+                    </style>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:ital,wght@1,300&display=swap');
+                        </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            
+                            <a href="/" id="navbar__logo"> <i class="fas fa-code"></i>  CS 1130  </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/assign1.html" class="navbar__links"> Assignment 1 </a>
+                </li>
+            </li>
+            <li class="navbar__item">
+                <a href="/assign2.html" class="navbar__links"> Assignment 2 </a>
+            </li>
+            <li class="navbar__item">
+                <a href="/assign3.html" class="navbar__links"> Assignment 3 </a>
+            </li>
+            <li class="navbar__item">
+                <a href="/assign4.html" class="navbar__links"> Assignment 4 </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="factorial__blah">
+        <h1> Assignment #3 - Factorial, Sum and Average of First N Natural Numbers</h1>
+        <div class="factorial__container">
+                <div class="factorial">
+
+                    <h3>The Factorial of N Numbers</h3>
+                    <p>
+                        <h>Input a value of n</h>
+                        <input id="num">
+                        <button onclick="factorial()">Calculate</button> 
+                    
+                    The factorial is:<span id="fact"></span>
+                    </p>
+                   
+                </div>
+
+                <div class="sum__of__numbers">
+                    
+                    <h3>The Sum of the First N Numbers</h3>
+                        <p>
+                            <label>Input a value of n</label>
+                            <input id="num1">
+                            <button onclick="sumMo()">Calculate</button> 
+                        </p>
+                        <p>The sum is: <span id="sum"></span></p>
+
+                </div>
+                    
+                <div class="average">
+                    <h3>The Average of the First N Numbers</h3>
+                    
+                    <p>
+                        <label>Input a value of n</label>
+                        <input id="num2">
+                        <button onclick="sumMo1()">Calculate</button> 
+                    </p>
+                    <p>The average is:<span id="sum2"></span>
+                    </p>
+                    
+                    <script>
+                    
+                    function sumMo1()
+                    {
+                    var n = document.getElementById("num2").value;
+                    var i, f=0;
+                    for(i=1; i<=n; i++) f += i;
+                    var avg = f/i+.5
+                    document.getElementById("sum2").innerHTML = avg;
+                    }
+                    
+                </script>
+                </div>
+
+        </div>
+    </div>
+   <footer >
+       <div class="footer">
+            <div class="footer-content"> 
+                <h3> All rights reserved Luke Narca 2021</h3>
+                 <p> Student of BS Information Technology 1-A</p>
+                 
+            </div>
+       </div>
+   </footer>
+   <script src="app.js"></script>
+</body>
+</html>
